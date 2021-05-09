@@ -1,0 +1,17 @@
+apiVersion: v1
+entries:
+  folding-at-home:
+  - apiVersion: v1
+    appVersion: 0.2.0
+    created: "2021-05-09T06:06:59.195251182Z"
+    description: A helm chart for deploying Folding @ Home workers
+    digest: 6f6f06dbf1a0d660686dd9d24e184ad192c6e3f19f4cb368f2c9141940198a72
+    home: https://foldingathome.org/
+    icon: file://../icon.svg
+    name: folding-at-home
+    sources:
+    - https://github.com/richstokes/k8s-fah
+    urls:
+    - https://github.com/platform9/fah_hack14/releases/download/folding-at-home-0.2.0/folding-at-home-0.2.0.tgz
+    version: 0.2.0
+generated: "2021-05-09T06:06:58.756009523Z"
