@@ -1,0 +1,12 @@
+gpu: false
+requests:
+  cpu: 100m
+  memory: 512Mi
+limits:
+  cpu: 1000m
+  memory: 512Mi
+replicas: 2
+fah:
+  username: "Anup_Barve" 
+  teamname: "pf9"
+  passkey: "33450c47369c28bf33450c47369c28bf"
