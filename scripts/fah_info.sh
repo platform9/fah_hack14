@@ -1,5 +1,5 @@
-kubectl -n fah cp fah-worker-789cb575d8-wndkn:/var/lib/fahclient/work/00/logfile_01.txt log.txt >>/dev/null 2>&1
-kubectl -n fah cp fah-worker-789cb575d8-wndkn:/var/lib/fahclient/log.txt log1.txt >>/dev/null 2>&1
+kubectl -n fah cp $1:/var/lib/fahclient/work/00/logfile_01.txt log.txt >>/dev/null 2>&1
+kubectl -n fah cp $1:/var/lib/fahclient/log.txt log1.txt >>/dev/null 2>&1
 
 COLOR='\033[0;32m'
 NC='\033[0m'
@@ -29,4 +29,4 @@ echo "********************************************************"
 echo "Linking of the User Account to the Project."
 echo "********************************************************"
 echo "$NC"
-curl -s -G https://api.foldingathome.org/user/:$1/stats -d passkey="$2" -d team=2 | jq .
+curl -s -G https://api.foldingathome.org/user/:$2/stats -d passkey="$3" -d team=2 | jq .

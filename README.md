@@ -4,7 +4,7 @@ Providing spare capacity of PMK clusters at Platform9 and at customer sites for 
 
 # How to Deploy
 
-- Helm Repo URL : https://platform9.github.io/helm-charts
+- Helm Repo URL : https://platform9.github.io/fah_hack14
 - Add this repo to the repositories via Pf9 UI
 - Select folding-at-home app and click "Deploy"
 
@@ -19,4 +19,12 @@ How to run :
 
 example:
 
-sh fah_info.sh <user_name> <passkey>
+```
+sh fah_info.sh <pod_name> <user_name> <passkey>
+
+where, 
+	pod_name = name of the pod on which fah client is running.
+	user_name = User name registered with FAH
+	passkey = passkey provided by FAH for user with user_name
+
+```
